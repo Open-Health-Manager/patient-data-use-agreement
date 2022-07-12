@@ -3,7 +3,8 @@ name: Deploy
 on:
   workflow_dispatch:
   push:
-    tags: *
+    tags:
+      - '*' # Push events to every tag
 
 jobs:
   deploy:
